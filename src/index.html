@@ -11,12 +11,129 @@
         minimum-scale=1.0"
   >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mobile App</title>
+  <title>AirBnB</title>
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./input.css">
   <link rel="shortcut icon" href="images/favicon.ico"/>
 </head>
 <body>
+  <header class="header">
+    <div class="nav">
+      <a href="#" target="_blank" class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+
+      <div class="nav_links">
+        <a href="#" target="_blank">Become a host</a>
+        <a href="#" target="_blank">Trips</a>
+        <a href="#" target="_blank">Messages</a>
+      </div>
+
+      <a href="#" class="avatar_icon">
+        <img src="images/avatar.svg" alt="avatar">
+      </a>
+    </div>
+
+    <div class="header_image"></div>
+  </header>
+
+  <div class="container">
+    <div class="main">
+      <p class="main_heading">Quiet apartment</p>
+      <p class="rooms_amount">Entire apartment</p>
+      <p class="details">
+        <span>4 guests</span>
+        <span>1 bed</span>
+        <span>1 bath</span>
+      </p>
+      <p class="appartment_description">
+        City Apartment is newly renovated in the heart of Budapest,
+        right in the city center. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam.
+      </p>
+      <p class="contact">
+        Contact host
+      </p>
+      <p class="amenities_heading">Amenities</p>
+      <div class="amenities_descr">
+        <ul class="amenities_descr">
+          <li>Elevator</li>
+          <li>Hair dryer</li>
+          <li>Washer</li>
+          <li>Kitchen</li>
+        </ul>
+      </div>
+      <p class="show_amenities">
+        Show All Amenities
+      </p>
+
+      <div class="reviews">
+        <p class="reviews_heading">Reviews</p>
+        <div class="review_item">
+          <img src="images/review_avatar.svg" alt="" class="reviewer_avatar">
+          <span class="reviewer_name">John</span><br>
+          <span class="review_date">September 2016</span>
+          <p class="review_content">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="review_item">
+          <img src="images/review_avatar.svg" alt="" class="reviewer_avatar">
+          <span class="reviewer_name">John</span><br>
+          <span class="review_date">September 2016</span>
+          <p class="review_content">Sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+
+      <div class="author">
+        <p class="author_name">Hosted by Jane</p>
+        <p class="author_address">Budapest, Hungary</p>
+        <p class="author_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+        <button class="contact_host">
+            Contact Host
+        </button>
+      </div>
+    </div>
+    
+    <div class="side">
+      <div class="booking">
+        <p class="price">25$ per night</p>
+        <form action="">
+          <input type="number" id="date" placeholder="Date">
+          <input type="number" id="guests_amount" placeholder="Guests">
+          <button class="book_room">Book</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer_inner">
+        <div class="airbnb">
+          <p class="footer_heading">Airbnb</p>
+          <a href="">About</a>
+          <a href="">Press</a>
+          <a href="">Help</a>
+        </div>
+      
+        <div class="discover">
+          <p class="footer_heading">Discover</p>
+          <a href="#" target="_blank">Travel credit</a>
+          <a href="#" target="_blank">Business</a>
+          <a href="#" target="_blank">Guidebooks</a>
+        </div>
+      
+        <div class="hosting">
+          <p class="footer_heading">Hosting</p>
+          <a href="#" target="_blank">Why host</a>
+          <a href="#" target="_blank">Hospitality</a>
+          <a href="#" target="_blank">Community</a>
+        </div>
+    </div>
+  </footer>
 
 <script src="./main.js"></script>
 </body>
