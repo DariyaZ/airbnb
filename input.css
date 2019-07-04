@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: 'Avenir';
+  color: #3D4E61; }
+
+* {
+  box-sizing: border-box; }
+
+.nav {
+  padding: 15px 19px 15px 26px;
+  display: flex; }
+  .nav .logo {
+    flex: 10%; }
+  .nav .nav_links {
+    margin-top: 6px;
+    flex: 80%;
+    text-align: right; }
+    .nav .nav_links a {
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 30px;
+      color: #3D4E61;
+      font-weight: bold; }
+
+.header_image {
+  clear: both;
+  background-image: url(images/header_image.svg);
+  background-size: cover;
+  height: 464px; }
+
+.container {
+  display: flex;
+  max-width: 901px;
+  margin: 0 auto;
+  padding: 39px 0 75px 0; }
+  .container .main {
+    flex: 70%; }
+    .container .main .main_heading {
+      font-size: 36px;
+      line-height: 42px;
+      margin: 0; }
+    .container .main .rooms_amount {
+      font-size: 16px;
+      line-height: 19px;
+      color: #687C94;
+      margin: 10px 0 15px 0; }
+    .container .main .details span {
+      margin-right: 35px;
+      font-size: 16px;
+      line-height: 19px; }
+    .container .main .appartment_description {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 471px;
+      margin: 28px 0; }
+    .container .main .contact {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: bold;
+      margin-bottom: 44px; }
+    .container .main .amenities_heading {
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: bold;
+      margin-bottom: 21px; }
+    .container .main .amenities_descr {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+      padding: 0;
+      margin: 0; }
+      .container .main .amenities_descr li {
+        list-style: none;
+        width: 176px;
+        margin-bottom: 13px;
+        font-size: 16px;
+        line-height: 19px; }
+    .container .main .show_amenities {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: bold; }
+    .container .main .reviews {
+      max-width: 471px; }
+      .container .main .reviews .reviews_heading {
+        font-size: 28px;
+        line-height: 33px;
+        margin: 66px 0 34px 0; }
+      .container .main .reviews .review_item {
+        margin-bottom: 50px; }
+        .container .main .reviews .review_item .reviewer_avatar {
+          float: left;
+          margin-right: 21px; }
+        .container .main .reviews .review_item span {
+          display: inline-block;
+          margin-bottom: 12px; }
+        .container .main .reviews .review_item .reviewer_name {
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: bold; }
+        .container .main .reviews .review_item .review_date {
+          font-size: 20px;
+          line-height: 27px; }
+    .container .main .author {
+      max-width: 471px; }
+      .container .main .author .author_name {
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+        margin-bottom: 11px; }
+      .container .main .author .author_address {
+        font-size: 14px;
+        line-height: 16px; }
+      .container .main .author .author_descr {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 7px 0 20px 0; }
+      .container .main .author .contact_host {
+        border: 1px solid #118488;
+        border-radius: 4px;
+        padding: 14px 25px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #118488;
+        background-color: #fff; }
+  .container .side {
+    flex: 30%; }
+    .container .side .booking {
+      width: 330px;
+      padding: 30px;
+      border: 1px solid #E1E7ED;
+      border-radius: 3px; }
+      .container .side .booking .price {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 39px; }
+      .container .side .booking #date,
+      .container .side .booking #guests_amount {
+        width: 100%;
+        padding: 14px 0 14px 17px;
+        font-size: 16px;
+        line-height: 19px;
+        border: 1px solid #E1E7ED;
+        border-radius: 3px;
+        margin-bottom: 16px; }
+      .container .side .booking .book_room {
+        width: 100%;
+        padding: 15px 95px;
+        background-color: #FD5C63;
+        color: #fff;
+        border-radius: 4px;
+        border: none;
+        margin-top: 8px; }
+
+.footer {
+  padding: 44px 0;
+  box-shadow: 0px -1px 0px #E1E7ED; }
+  .footer .footer_inner {
+    display: flex;
+    max-width: 901px;
+    margin: 0 auto; }
+    .footer .footer_inner .airbnb,
+    .footer .footer_inner .discover,
+    .footer .footer_inner .hosting {
+      flex: 33%; }
+    .footer .footer_inner .footer_heading {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .footer .footer_inner a {
+      display: block;
+      text-decoration: none;
+      color: #3D4E61;
+      margin-bottom: 9px; }
+    .footer .footer_inner a:last-child {
+      margin: 0; }

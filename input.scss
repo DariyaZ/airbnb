@@ -1,0 +1,243 @@
+$primaryFontSize: 16px;
+$primaryLineHeight: 19px;
+
+@mixin paragraphs($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir';
+  color: #3D4E61;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  padding: 15px 19px 15px 26px;
+  display: flex;
+
+  .logo {
+    flex: 10%;
+  }
+  
+  .nav_links {
+    margin-top: 6px;
+    flex: 80%;
+    text-align: right;
+
+    a {
+      text-decoration: none;
+      @include paragraphs($primaryFontSize, $primaryLineHeight);
+      margin-right: 30px;
+      color: #3D4E61;
+      font-weight: bold;
+    }
+  }
+}
+
+.header_image {
+  clear: both;
+  background-image: url(images/header_image.svg);
+  background-size: cover;
+  height: 464px;
+}
+
+.container {
+  display: flex;
+  max-width: 901px;
+  margin: 0 auto;
+  padding: 39px 0 75px 0;
+  
+  .main {
+    flex: 70%;
+
+    .main_heading {
+      @include paragraphs(36px, 42px);
+      margin: 0;
+    }
+    
+    .rooms_amount {
+      @include paragraphs($primaryFontSize, $primaryLineHeight);
+      color: #687C94;
+      margin: 10px 0 15px 0;
+    }
+
+    .details span{
+      margin-right: 35px;
+      @include paragraphs($primaryFontSize, $primaryLineHeight);
+    }
+
+    .appartment_description {
+      @include paragraphs($primaryFontSize, 24px);
+      max-width: 471px;
+      margin: 28px 0;
+    }
+    
+    .contact {
+      @include paragraphs($primaryFontSize, $primaryLineHeight);
+      font-weight: bold;
+      margin-bottom: 44px;
+    }
+    
+    .amenities_heading {
+      @include paragraphs(20px, 23px);
+      font-weight: bold;
+      margin-bottom: 21px;
+    }
+    
+    .amenities_descr {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        width: 176px;
+        margin-bottom: 13px;
+        @include paragraphs($primaryFontSize, $primaryLineHeight);
+      }
+    }
+    
+    .show_amenities {
+      @include paragraphs($primaryFontSize, $primaryLineHeight);
+      font-weight: bold;
+    }
+
+    .reviews {
+      max-width: 471px;
+
+      .reviews_heading {
+        @include paragraphs(28px, 33px);
+        margin: 66px 0 34px 0;
+      }
+      
+      .review_item {
+        margin-bottom: 50px;
+
+        .reviewer_avatar {
+          float: left;
+          margin-right: 21px;
+        }
+        
+        span {
+          display: inline-block;
+          margin-bottom: 12px;
+        }
+        
+        .reviewer_name {
+          @include paragraphs(14px, 16px);
+          font-weight: bold;
+        }
+        
+        .review_date {
+          @include paragraphs(20px, 27px);
+        }
+      }
+    }
+
+    .author {
+      max-width: 471px;
+
+      .author_name {
+        @include paragraphs(28px, 33px);
+        font-weight: bold;
+        margin-bottom: 11px;
+      }
+      
+      .author_address {
+        @include paragraphs(14px, 16px);
+      }
+      
+      .author_descr {
+        @include paragraphs($primaryFontSize, $primaryLineHeight);
+        margin: 7px 0 20px 0;
+      }
+      
+      .contact_host {
+        border: 1px solid #118488;
+        border-radius: 4px;
+        padding: 14px 25px;
+        @include paragraphs(16px, 22px);
+        color: #118488;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .side {
+    flex: 30%;
+
+    .booking {
+      width: 330px;
+      padding: 30px;
+      border: 1px solid #E1E7ED;
+      border-radius: 3px;
+
+      .price {
+        @include paragraphs($primaryFontSize, $primaryLineHeight);
+        margin-bottom: 39px;
+      }
+
+      #date,
+      #guests_amount {
+        width: 100%;
+        padding: 14px 0 14px 17px;
+        @include paragraphs($primaryFontSize, $primaryLineHeight);
+        border: 1px solid #E1E7ED;
+        border-radius: 3px;
+        margin-bottom: 16px;
+      }
+
+      .book_room {
+        width: 100%;
+        padding: 15px 95px;
+        background-color: #FD5C63;
+        color: #fff; 
+        border-radius: 4px;
+        border: none;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+
+.footer {
+  padding: 44px 0;
+  box-shadow: 0px -1px 0px #E1E7ED;
+
+  .footer_inner {
+    display: flex;
+    max-width: 901px;
+    margin: 0 auto;
+
+    .airbnb,
+    .discover,
+    .hosting {
+      flex: 33%;
+    }
+
+    .footer_heading {
+      @include paragraphs(16px, 19px);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #3D4E61;
+      margin-bottom: 9px;
+    }
+
+    a:last-child {
+      margin: 0;
+    }
+  }
+}
