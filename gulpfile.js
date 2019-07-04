@@ -20,11 +20,11 @@ gulp.task('sass', async function(){
 // }
 
 gulp.task('browser-sync', async function() {
-    browserSync({ // Выполняем browser Sync
-        server: { // Определяем параметры сервера
-            baseDir: 'src' // Директория для сервера - app
+    browserSync({
+        server: {
+            baseDir: 'src'
         },
-        notify: false // Отключаем уведомления
+        notify: false
     });
 });
 
