@@ -1,3 +1,3 @@
 AirBnB Listing Details
 
-- [GH-PAGES LINK](https://dariyaz.github.io/airbnb)
+- [GH-PAGES LINK](https://dariyaz.github.io/airbnb/)
