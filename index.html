@@ -12,9 +12,8 @@
   >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AirBnB</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./input.css">
-  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="shortcut icon" href="images/icon.ico"/>
 </head>
 <body>
   <header class="header">
@@ -29,7 +28,7 @@
         <a href="#" target="_blank">Messages</a>
       </div>
 
-      <a href="#" class="avatar_icon">
+      <a href="#" target="_blank" class="avatar_icon">
         <img src="images/avatar.svg" alt="avatar">
       </a>
     </div>
@@ -39,7 +38,7 @@
 
   <div class="container">
     <div class="main">
-      <p class="main_heading">Quiet apartment</p>
+      <h1 class="main_heading">Quiet apartment</h1>
       <p class="rooms_amount">Entire apartment</p>
       <p class="details">
         <span>4 guests</span>
@@ -52,9 +51,9 @@
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam.
       </p>
-      <p class="contact">
+      <a href="#" class="contact">
         Contact host
-      </p>
+      </a>
       <p class="amenities_heading">Amenities</p>
       <div class="amenities_descr">
         <ul class="amenities_descr">
@@ -64,14 +63,14 @@
           <li>Kitchen</li>
         </ul>
       </div>
-      <p class="show_amenities">
+      <a href="#" class="show_amenities">
         Show All Amenities
-      </p>
+      </a>
 
       <div class="reviews">
-        <p class="reviews_heading">Reviews</p>
+        <h3 class="reviews_heading">Reviews</h3>
         <div class="review_item">
-          <img src="images/review_avatar.svg" alt="" class="reviewer_avatar">
+          <img src="images/review_avatar.svg" alt="avatar" class="reviewer_avatar">
           <span class="reviewer_name">John</span><br>
           <span class="review_date">September 2016</span>
           <p class="review_content">Lorem ipsum dolor sit amet, consectetur
@@ -79,7 +78,7 @@
             dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class="review_item">
-          <img src="images/review_avatar.svg" alt="" class="reviewer_avatar">
+          <img src="images/review_avatar.svg" alt="avatar" class="reviewer_avatar">
           <span class="reviewer_name">John</span><br>
           <span class="review_date">September 2016</span>
           <p class="review_content">Sed do eiusmod tempor incididunt ut labore
@@ -88,7 +87,7 @@
       </div>
 
       <div class="author">
-        <p class="author_name">Hosted by Jane</p>
+        <h3 class="author_name">Hosted by Jane</h3>
         <p class="author_address">Budapest, Hungary</p>
         <p class="author_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
@@ -101,7 +100,7 @@
     <div class="side">
       <div class="booking">
         <p class="price">25$ per night</p>
-        <form action="">
+        <form action="handler.php" method="GET">
           <input type="number" id="date" placeholder="Date">
           <input type="number" id="guests_amount" placeholder="Guests">
           <button class="book_room">Book</button>
@@ -113,23 +112,23 @@
   <footer class="footer">
     <div class="footer_inner">
         <div class="airbnb">
-          <p class="footer_heading">Airbnb</p>
-          <a href="">About</a>
-          <a href="">Press</a>
-          <a href="">Help</a>
+          <span class="footer_heading">Airbnb</span>
+          <a href="#" target="_blank" class="f">About</a>
+          <a href="#" target="_blank">Press</a>
+          <a href="#" target="_blank">Help</a>
         </div>
       
         <div class="discover">
-          <p class="footer_heading">Discover</p>
+          <span class="footer_heading">Discover</span>
           <a href="#" target="_blank">Travel credit</a>
           <a href="#" target="_blank">Business</a>
           <a href="#" target="_blank">Guidebooks</a>
         </div>
       
         <div class="hosting">
-          <p class="footer_heading">Hosting</p>
+          <span class="footer_heading">Hosting</span>
           <a href="#" target="_blank">Why host</a>
-          <a href="#" target="_blank">Hospitality</a>
+          <a href="span#" target="_blank">Hospitality</a>
           <a href="#" target="_blank">Community</a>
         </div>
     </div>
