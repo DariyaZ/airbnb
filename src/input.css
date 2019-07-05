@@ -23,6 +23,8 @@ body {
       margin-right: 30px;
       color: #3D4E61;
       font-weight: bold; }
+    .nav .nav_links a:hover {
+      color: #FD5C63; }
 
 .header_image {
   clear: both;
