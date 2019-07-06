@@ -1,23 +1,15 @@
-let gulp = require('gulp'),
+const gulp = require('gulp'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', async function(){
     return gulp.src('src/**/*.scss')
     .pipe(sass())
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('src/'))
     .pipe(browserSync.reload({stream: true}));
 });
-
-// gulp.task('scripts', async function() {
-//     return gulp.src('app/js/main.js')
-//            .pipe(browserSync.reload({ stream: true }));
-// });
-
-// gulp.task('code'), async function() {
-//     return gulp.src('app/*.html')
-//            .pipe(browserSync.reload({ stream: true }));
-// }
 
 gulp.task('browser-sync', async function() {
     browserSync({
@@ -28,11 +20,7 @@ gulp.task('browser-sync', async function() {
     });
 });
 
-gulp.task('watch', function(){
-    gulp.watch('src/input.scss', gulp.parallel('sass'));
-    // gulp.watch('src/*.html', gulp.parallel('code'));
-    // gulp.watch('src/main.js', gulp.parallel('scripts'));
-});
+gulp.watch('src/input.scss', gulp.parallel('sass'));
 
-gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('sass', 'browser-sync'));
 

@@ -187,6 +187,13 @@ body {
         @include paragraphs(16px, 22px);
         color: #118488;
         background-color: #fff;
+        outline: none;
+        transition: 1s;
+      }
+
+      .contact_host:hover {
+        background-color: #118488;
+        color: #fff;
       }
     }
   }
@@ -225,6 +232,11 @@ body {
         border: none;
         margin-top: 8px;
         outline: none;
+        transition: 1s;
+      }
+
+      .book_room:hover {
+        background-color: firebrick;
       }
     }
   }
@@ -237,14 +249,9 @@ body {
 
   .footer_inner {
     display: flex;
+    justify-content: space-between;
     max-width: 901px;
     margin: 0 auto;
-
-    .airbnb,
-    .discover,
-    .hosting {
-      flex: 33%;
-    }
 
     .footer_heading {
       display: block;

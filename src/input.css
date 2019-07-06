@@ -5,16 +5,26 @@ body {
   color: #3D4E61; }
 
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .nav {
   padding: 15px 19px 15px 26px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .nav .logo {
-    flex: 10%; }
+    -webkit-box-flex: 10%;
+    -webkit-flex: 10%;
+        -ms-flex: 10%;
+            flex: 10%; }
   .nav .nav_links {
     margin-top: 6px;
-    flex: 80%;
+    -webkit-box-flex: 80%;
+    -webkit-flex: 80%;
+        -ms-flex: 80%;
+            flex: 80%;
     text-align: right; }
     .nav .nav_links a {
       text-decoration: none;
@@ -33,12 +43,18 @@ body {
   height: 464px; }
 
 .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   max-width: 901px;
   margin: 0 auto;
   padding: 39px 0 75px 0; }
   .container .main {
-    flex: 70%; }
+    -webkit-box-flex: 70%;
+    -webkit-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%; }
     .container .main .main_heading {
       font-size: 36px;
       line-height: 42px;
@@ -65,6 +81,8 @@ body {
       margin-bottom: 24px;
       text-decoration: none;
       color: #3D4E61;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
       transition: 2s; }
     .container .main .contact:hover {
       color: #FD5C63; }
@@ -74,8 +92,13 @@ body {
       font-weight: bold;
       margin-bottom: 21px; }
     .container .main .amenities_descr {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       max-width: 400px;
       padding: 0;
       margin: 0; }
@@ -92,6 +115,8 @@ body {
       font-weight: bold;
       text-decoration: none;
       color: #3D4E61;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
       transition: 2s; }
     .container .main .show_amenities:hover {
       color: #FD5C63; }
@@ -136,9 +161,19 @@ body {
         font-size: 16px;
         line-height: 22px;
         color: #118488;
-        background-color: #fff; }
+        background-color: #fff;
+        outline: none;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+      .container .main .author .contact_host:hover {
+        background-color: #118488;
+        color: #fff; }
   .container .side {
-    flex: 30%; }
+    -webkit-box-flex: 30%;
+    -webkit-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%; }
     .container .side .booking {
       width: 330px;
       padding: 30px;
@@ -166,19 +201,28 @@ body {
         border-radius: 4px;
         border: none;
         margin-top: 8px;
-        outline: none; }
+        outline: none;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+      .container .side .booking .book_room:hover {
+        background-color: firebrick; }
 
 .footer {
   padding: 44px 0;
-  box-shadow: 0px -1px 0px #E1E7ED; }
+  -webkit-box-shadow: 0px -1px 0px #E1E7ED;
+          box-shadow: 0px -1px 0px #E1E7ED; }
   .footer .footer_inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 901px;
     margin: 0 auto; }
-    .footer .footer_inner .airbnb,
-    .footer .footer_inner .discover,
-    .footer .footer_inner .hosting {
-      flex: 33%; }
     .footer .footer_inner .footer_heading {
       display: block;
       font-size: 16px;
